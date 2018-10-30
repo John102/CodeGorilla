@@ -1,6 +1,7 @@
 <ul>
-  <li><a class="active" href="#introductie">Introductie</a></li>
-  <li><a href="#nieuws">Nieuws</a></li>
-  <li><a href="main.php?pagina=contact">Contact</a></li>
-  <li><a href="#login">Login</a></li>
+  <li><a href="index.php?pagina=introductie">Introductie</a></li>
+  <li><a href="index.php?pagina=reviews">Reviews</a></li>
+  <li><a href="index.php?pagina=nieuws">Nieuws</a></li>
+  <li><a href="index.php?pagina=contact">Contact</a></li>
+  <li><a href="index.php?pagina=login">Login</a></li>
 </ul>

@@ -2,10 +2,10 @@
 
 	<h3>Sitemap</h3>
 	<ul>
-		<li><a href="#">Introductie</a></li>
-		<li><a href="#">Nieuws</a></li>
-		<li><a href="#">Contact</a></li>
-		<li><a href="#">Login</a></li>
+		<li><a href="index.php?pagina=introductie">Introductie</a></li>
+		<li><a href="index.php?pagina=nieuws">Nieuws</a></li>
+		<li><a href="index.php?pagina=contact">Contact</a></li>
+		<li><a href="index.php?pagina=login">Login</a></li>
 	</ul>
 
 	

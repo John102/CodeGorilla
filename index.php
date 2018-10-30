@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 	<head>
 		<title>Code Gorilla</title>
@@ -17,26 +18,28 @@
 		</header>
 		<!-- CONTENT -->
 		<section id="inhoud">
-			Inhoud
+			<section id="inhoud-content">
 			<?php
-					// Check of pagina variable is gezet
-					// TRUE 
-					if(isset($_GET['pagina'])) {
-						$pagina = $_GET['pagina'];
-						$paginaLijst = array('contact');
-						// Als pagin is toegestaan
-						if(in_array($paginaLijst, $pagina)) {
-							include('/includes/' . $pagina . '.inc.php');
-						// Als pagina niet is toegestaan
-						} else {
-							$pagina = '404.inc.php';
-						};
+				if(isset($_GET['pagina'])) {
+					$pagina = htmlspecialchars($_GET['pagina']);
+					$paginaLijst = array('introductie',
+										 'nieuws',
+										 'contact',
+										 'login',
+										 'post_review',
+										 'reviews');
 
-					// FALSE
+					if(in_array($pagina,$paginaLijst)) {
+						include('paginas/' . $pagina . '.inc.php');
 					} else {
-						$pagina = 'introductie.inc.php';
+						include('paginas/404.inc.php');
 					}
+				} else {
+					include('paginas/introductie.inc.php');
+				}
+
 			?>
+			</section>
 		</section>
 		<!-- FOOTER -->
 		<footer>
