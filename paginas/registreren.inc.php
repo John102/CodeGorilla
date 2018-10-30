@@ -31,6 +31,15 @@
 	<br/>
 	<br/>
 
+	<label for="accounttype">Account Type</label>
+	<select name="accounttype">
+		<option value="0">Werkzoekende</option>
+		<option value="1">Werkaanbieder</option>
+	</select>
+
+	<br/>
+	<br/>
+
 	<label for="wachtwoord">Wachtwoord</label>
 	<input type="password" name="wachtwoord" required />
 

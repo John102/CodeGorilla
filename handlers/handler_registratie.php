@@ -7,7 +7,7 @@
 	try {
 
 		// Variabelen initializeren
-		$voornaam = $achternaam = $telefoon = $email = $wachtwoord = $wachtwoord2 = '';
+		$voornaam = $achternaam = $telefoon = $email = $wachtwoord = $wachtwoord2 = $accounttype = '';
 
 		// Variabelen zetten met form data
 		$voornaam		=		testData($_POST['voornaam']);
@@ -15,19 +15,21 @@
 		$telefoon		=		testData($_POST['telefoon']);
 		$email			=		testData($_POST['email']);
 		$wachtwoord 	=		testData($_POST['wachtwoord']);
+		$accounttype	=		testData($_POST['accounttype']);
 
 		// Wachtwoord hashen
 		$option			=		['cost' => 11, ];
 		$hashed			=		password_hash($wachtwoord, PASSWORD_BCRYPT, $option);
 
 		// Query bouwen en uitvoeren
-		$query 			=		$connection->prepare('INSERT INTO cg_gebruikers (voornaam,achternaam,telefoon,wachtwoord,email) 
-													  VALUES (:voornaam, :achternaam, :telefoon, :wachtwoord, :email)');
+		$query 			=		$connection->prepare('INSERT INTO cg_gebruikers (voornaam,achternaam,telefoon,wachtwoord,email,accounttype) 
+													  VALUES (:voornaam, :achternaam, :telefoon, :wachtwoord, :email, :accounttype)');
 		$query->bindValue(':voornaam',$voornaam);
 		$query->bindValue(':achternaam',$achternaam);
 		$query->bindValue(':telefoon',$telefoon);
 		$query->bindValue(':wachtwoord',$hashed);
 		$query->bindValue(':email',$email);
+		$query->bindValue(':accounttype',$accounttype);
 
 		$query->execute();
 
