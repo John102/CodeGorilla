@@ -4,8 +4,8 @@
     <br/><br/>
     <label for="wachtwoord">Wachtwoord:</label>
     <input type="password" id="password" name="wachtwoord" placeholder="Wachtwoord" required/>
-    <input type="checkbox" onchange="SHPassword(this);"><span id="showhidepwd">Show</span>
-    <input type="submit" value="Aanmelden" required/>
+    <input type="checkbox" onchange="SHPassword(this);"><span id="showhidepwd">Laat wachtwoord zien</span>
+    <input type="submit" value="Aanmelden" />
   </form>
 
 <section>
