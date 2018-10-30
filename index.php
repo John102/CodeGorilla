@@ -27,7 +27,9 @@
 										 'contact',
 										 'login',
 										 'post_review',
-										 'reviews');
+										 'reviews',
+										 'registreren',
+										 'status');
 
 					if(in_array($pagina,$paginaLijst)) {
 						include('paginas/' . $pagina . '.inc.php');
