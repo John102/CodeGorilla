@@ -1,5 +1,8 @@
 <?php
 	session_start();
+	require_once('handlers/sanitize.php');
+	// Gebruiker Verifiëren
+	if(verifyLevel(2)) {
 ?>
 
 <form action="handlers/handler_registratie.php" method="post">
@@ -37,3 +40,12 @@
 	<input type="submit" value="registeren" />
 
 </form>
+
+<?php
+
+	} else {
+		header('Location: https://www.mijnhoekje.nl/cg/index.php?pagina=status&status=nietgemachtigd');
+		die();
+	}
+
+?>

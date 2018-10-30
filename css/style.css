@@ -237,8 +237,7 @@ textarea {
 	min-height: 200px;
 	resize: none;
 }
-
-input[type=checkbox] {
+input[type='checkbox'] {
     width: 120px;
     height: 40px;
     background: #333;
@@ -246,4 +245,22 @@ input[type=checkbox] {
 
     border-radius: 50px;
     position: relative;
+}
+
+/*************************
+	PROFIEL
+**************************/
+.profiel-titel {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.profiel-ul {
+	list-style-type: none;
+}
+
+.profiel-ul li {
+	border: 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	padding: 5px 0px;
 }

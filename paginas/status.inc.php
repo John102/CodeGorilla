@@ -12,6 +12,12 @@
 			case 'registratiemislukt':
 				echo 'Er is iets mis gegaan met de registratie procedure.';
 				break;
+			case 'inloggenmislukt':
+				echo 'Er is iets fout gegaan bij de inlogprocedure.';
+				break;
+			case 'nietgemachtigd':
+				echo 'U bent niet gemachtigd om deze pagina te bekijken.';
+				break;
 			default:
 				echo 'Status onbekend.';
 		}

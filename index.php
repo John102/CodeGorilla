@@ -29,7 +29,8 @@
 										 'post_review',
 										 'reviews',
 										 'registreren',
-										 'status');
+										 'status',
+										 'profiel');
 
 					if(in_array($pagina,$paginaLijst)) {
 						include('paginas/' . $pagina . '.inc.php');
@@ -47,5 +48,7 @@
 		<footer>
 			<?php include('includes/footer.inc.php'); ?>
 		</footer>
+
+		<script src="js/functies.js"></script>
 	</body>
 </html>
