@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
 <style>
-
-
 ul {
 	list-style-type: none;
 	margin:0;
@@ -35,15 +30,9 @@ li a:hover {
 }
 
 </style>
-</head>
-<body>
-
 <ul>
   <li><a class="active" href="#introductie">Introductie</a></li>
   <li><a href="#nieuws">Nieuws</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#login">Login</a></li>
 </ul>
-
-</body>
-</html>
