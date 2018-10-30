@@ -13,7 +13,6 @@
 		</nav>
 		<!-- HEADER -->
 		<header>
-			Header
 			<?php include('includes/header.inc.php'); ?>
 		</header>
 		<!-- CONTENT -->
@@ -24,10 +23,10 @@
 					// TRUE 
 					if(isset($_GET['pagina'])) {
 						$pagina = $_GET['pagina'];
-						$paginaLijst = array('');
+						$paginaLijst = array('contact');
 						// Als pagin is toegestaan
 						if(in_array($paginaLijst, $pagina)) {
-
+							include('/includes/' . $pagina . '.inc.php');
 						// Als pagina niet is toegestaan
 						} else {
 							$pagina = '404.inc.php';

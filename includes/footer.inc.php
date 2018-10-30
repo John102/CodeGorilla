@@ -24,11 +24,11 @@
 
 	<h3>Contactgegevens</h3>
 
-	<p><b>Adres:</b> 		Haagweg 1</p>
-	<p><b>Postcode:</b> 	4814 GA</p>
-	<p><b>Plaats:</b> 		Breda</p>
-	<p><b>Telefoon:</b> 	076-0000000</p>
-	<p><b>E-mail:</b> 		<a href="mailto:#">code@gorilla.nl</a></p>
-	
-
+	<table>
+		<tr>	<td><b>Adres:</b></td>		<td>Haagweg 1		</td>	</tr>
+		<tr>	<td><b>Postcode:</b></td>	<td>4814 GA 		</td>	</tr>
+		<tr>	<td><b>Plaats:</b></td>		<td>Breda 			</td>	</tr>
+		<tr>	<td><b>Telefoon:</b></td>	<td>076-0000000 	</td>	</tr>
+		<tr>	<td><b>E-mail:</b></td><td><a href="mailto:#">code@gorilla.nl</a></td>	</tr>
+	</table>
 </section>
