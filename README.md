@@ -10,7 +10,6 @@
 	Header  (includes/header.inc.php
 	Header IMG (PNG)
 
-
 // John (css, html, php)
 	CSS (css/style.css)
 	Shell   (main.php)
@@ -21,9 +20,6 @@
 	** registratie->form
 	** database setup
 	
-
 https://www.mijnhoekje.nl/cg/
-
-
 
 LET OP: DATABASE HANDLER NIET AANWEZIG IN BUNDEL (ivm gevoelige info)
