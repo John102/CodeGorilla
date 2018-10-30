@@ -18,3 +18,7 @@ footer  (includes/footer.inc.php)
 ** contact -> handler
 
 Testemonies (paginas/reviews.inc.php)
+
+
+
+https://www.mijnhoekje.nl/cg/
