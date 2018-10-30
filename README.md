@@ -1,24 +1,21 @@
 # CodeGorilla
 
-// JoeValor
+// JoeValor (forms)
 Contact (paginas/contact.inc.php)
 Login (paginas/login.inc.php)
-Nieuws (paginas/nieuws.inc.php)
+postreview (paginas/post_review.inc.php)
 
-// Siebe
-Nav   (includes/navigatie.inc.php)
-Header (includes/header.inc.php)
+// Siebe (html)
+Nav     (includes/navigatie.inc.php)
+Header  (includes/header.inc.php
+Header IMG (PNG)
 
-Introductie 
-Uitleg      (paginas/introductie.inc.php)
 
-// John
+// John (css, html, php)
+CSS (css/style.css)
 Shell   (main.php)
 footer  (includes/footer.inc.php)
 ** contact -> handler
-
-Testemonies (paginas/reviews.inc.php)
-
-
+** sanitize-> handler
 
 https://www.mijnhoekje.nl/cg/
