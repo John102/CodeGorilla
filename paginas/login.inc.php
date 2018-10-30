@@ -8,15 +8,6 @@
     <input type="submit" value="Aanmelden" />
   </form>
 
-<section>
-  <!-- Checbox -->
-  <h3>Checkbox</h3>
-    <div class="checkbox">
-        <input type="checkbox" value="1" id="checkboxInput"/>
-        <label for="checkboxInput"></label>
-    </div>
-</section>
-
 <script>
 	function SHPassword(x)
 	{
