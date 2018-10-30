@@ -247,3 +247,5 @@ input[type=checkbox] {
     border-radius: 50px;
     position: relative;
 }
+
+#more {display: none;}
