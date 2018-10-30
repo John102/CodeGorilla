@@ -1,0 +1,120 @@
+
+/*************************
+	ALGEMEEN
+**************************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: Helvetica, 'sans-serif';
+	font-size: 1rem;
+	display: grid;
+	grid-gap: 0px;
+	grid-template-areas:
+	'navigation'
+	'header'
+	'inhoud'
+	'footer';
+}
+/*************************
+	TYPOGRAPHY
+**************************/
+
+h3 {
+	font-size: 1.3em;
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+a, a:active, a:hover, a:visited {
+	text-decoration: none;
+}
+
+/*************************
+	NAVIGATIE
+**************************/
+nav {
+	grid-area: navigation;
+	height: 35px;
+	background-color: #5d5d5d;
+	width: 100%;
+}
+
+
+/*************************
+	HEADER
+**************************/
+header {
+	grid-area: header;
+	background-color: #eaa8b7;
+	width: 100%;
+	height: 50vh;
+}
+
+/*************************
+	CONTENT
+**************************/
+#inhoud {
+	grid-area: inhoud;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+
+/*************************
+	FOOTER
+**************************/
+footer {
+	grid-area: footer;
+	background-color: #131313;
+	padding: 20px;
+	display: grid;
+	grid-template-areas: 
+	'sitemap socialmedia contact';
+}
+
+footer #sitemap {
+	grid-area: sitemap;
+	padding: inherit;
+}
+
+footer #sitemap ul {
+	list-style-type: none;
+}
+
+footer #socialmedia {
+	text-align: center;
+	grid-area: socialmedia;
+	border-left: 1px solid rgba(255,255,255,0.2);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	padding: inherit;
+}
+
+footer #contact {
+	grid-area: contact;
+	padding: inherit;
+}
+
+.socialmedia {
+	font-size: 2.2rem;
+	margin-bottom: 10px;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #ee1948;
+}
+
+.block {
+	display: block;
+}
+
+footer p {
+	font-size: 1em;
+	color: #fff;
+}
